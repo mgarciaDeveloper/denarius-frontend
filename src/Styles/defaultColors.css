@@ -1,0 +1,59 @@
+.color {
+    background-color: #696969;
+    background-color: #f05454;
+    background-color: rgb(240, 84, 84);
+    color: rgb(252, 153, 124);
+    color: #f9f3f3;
+    color: #519259;
+    color:#6886C5;
+    background-color: #2d4263;
+    background-color: #142f43;
+    background-color: #ffc900;
+    background-image: "https://www.transparenttextures.com/patterns/fabric-of-squares.png";
+  }
+  
+  .doecash{
+    color: #4eec91;
+    color:rgb(78,236,145,255);
+    color: #5b1dec;
+    color:rgba(91,29,236,218);
+    color: rgb(248, 241, 241,0.7);
+    
+  }
+  
+  .footer{
+    color:rgb(104, 134, 197);
+    background: linear-gradient(113deg, rgb(104, 134, 197) 20%, rgb(104, 134, 197,0.9) 58%),
+  }
+  
+  .bgColor{
+      color:rgb(249, 243, 243,1);
+  }
+  
+  .blueColorText {
+    color: #142f43;
+  }
+  
+  .greyText{
+    color: #7F7C82;
+  }
+  
+  
+  .lightBlueColor {
+    color: #2666CF;
+  }
+  
+  .pinks{
+    /* Gradient */
+    background: linear-gradient(100deg, #f05454 0%, rgb(255, 150, 173,1) 100%);
+  
+    /* Text */
+    color: rgb(252, 153, 124);
+  
+    /* Underline */
+      width: 10%;
+      background-color: #f05454;
+      height: 7px;
+  
+  }
+  

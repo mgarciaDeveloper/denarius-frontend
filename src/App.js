@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import './Styles/styles.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import EventForm from './Components/EventForm';
+import EventList from './Components/EventList';
+import EventEdit from './Components/EventEdit';
+import SaleForm from './Components/SaleForm';
+import ProductForm from './Components/ProductForm';
+import ProductList from './Components/ProductList';
+import ProductEdit from './Components/ProductEdit';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<EventList />} /> {/* Adicione a rota para a landing page */}
+                <Route path="/event/create" element={<EventForm />} />
+                <Route path="/event/:idt" exact element={<EventEdit />} /> {/* Add the route for EventEdit */}
+              
+                <Route path="/product" element={<ProductList />} />
+                <Route path="/product/create" element={<ProductForm />} />
+                <Route path="/product/:idt" element={<ProductEdit />} />
+                <Route path="/sale" element={<SaleForm />} />
+                {/*                 <Route path="/events" element={<EventList/>} /> */}
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
