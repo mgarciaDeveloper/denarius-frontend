@@ -36,7 +36,7 @@ width:93%;
 height: 9vh;
 `;
 
-const DefaultForm = ({ isLoading, isSuccess, errorMessage, children, title }) => {
+const DefaultForm = ({ isLoading, isSuccess, errorMessage, children, title,noHeader }) => {
     const navigate = useNavigate();
 
     return (
@@ -44,7 +44,7 @@ const DefaultForm = ({ isLoading, isSuccess, errorMessage, children, title }) =>
 
 
             <FormContainer>
-                <TopDiv direction="row"
+                {!noHeader && <TopDiv direction="row"
                     justifyContent="space-between"
                     alignItems="center"
                     spacing={2} >
@@ -58,7 +58,7 @@ const DefaultForm = ({ isLoading, isSuccess, errorMessage, children, title }) =>
                             <InventoryIcon />
                         </IconButton>
                     </Tooltip>
-                </TopDiv>
+                </TopDiv>}
                 {isLoading && <div style={{ width: '80%' }}><LinearProgress /></div>}
                 {isSuccess && (
                     <FeedbackContainer>
